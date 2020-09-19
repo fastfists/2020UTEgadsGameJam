@@ -10,14 +10,13 @@ public class LightSetter : MonoBehaviour
 
     void Start()
     {
-        lamps = GameObject.FindGameObjectsWithTag("Scone");
+        lamps = GameObject.FindGameObjectsWithTag("Lamp");
         hasUpdated = false;
     }
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E) || !hasUpdated) {
             foreach (var lamp in lamps) {
-                Debug.Log("Oh yea!!!");
                 var light = lamp.GetComponent<Light2D>();
                 var ps = lamp.GetComponent<ParticleSystem>();
                 var main = ps.main;

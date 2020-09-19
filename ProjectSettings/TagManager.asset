@@ -4,12 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Scone
   - Artifact
   - MainCanvas
   - Title
   - Description
   - Pause
+  - FireFlies
+  - Lamp
   layers:
   - Default
   - TransparentFX

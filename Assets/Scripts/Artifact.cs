@@ -37,19 +37,19 @@ public class Artifact : MonoBehaviour
             GameObject.FindGameObjectWithTag("Pause").GetComponent<MainMenu>().Pause();
         }
     }
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if (collider.tag == "Player")
+        if (GetComponent<Collider>().tag == "Player")
         {
-            Debug.Log(collider.tag);
+            Debug.Log(GetComponent<Collider>().tag);
             pressE.SetActive(true);
         }
     }
-    void OnTriggerExit2D(Collider2D collider)
+    void OnTriggerExit2D(Collider2D collider2D)
     {
-        if (collider.tag == "Player")
+        if (GetComponent<Collider>().tag == "Player")
         {
-            Debug.Log(collider.tag);
+            Debug.Log(GetComponent<Collider>().tag);
             pressE.SetActive(false);
         }
     }

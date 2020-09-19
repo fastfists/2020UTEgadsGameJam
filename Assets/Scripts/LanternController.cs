@@ -12,19 +12,19 @@ public class LanternController : MonoBehaviour {
     void Update() {
         float step = speed * Time.deltaTime;
 
-        float x = simplify(Input.GetAxisRaw("Horizontal"));
-        float y = simplify(Input.GetAxisRaw("Vertical"));
-        tilt(x, y);
+        float x = Simplify(Input.GetAxisRaw("Horizontal"));
+        float y = Simplify(Input.GetAxisRaw("Vertical"));
+        Tilt(x, y);
 
         transform.position = Vector3.MoveTowards(transform.position, target + player.position, step);
     }
 
-    float simplify(float x) {
+    float Simplify(float x) {
         if (x == 0.0) return x;
         return x / Mathf.Abs(x);
     }
 
-    void tilt(float x, float y) {
+    void Tilt(float x, float y) {
         if (x != 0 || y != 0) 
             target = new Vector3(x*offset, y*offset, 0);
     }

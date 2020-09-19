@@ -27,7 +27,7 @@ public class FirefliesController : MonoBehaviour {
     }
 
     private void UpdateFlies() {
-        int count = FireflyManager.instance.count;
+        int count = FireflyManager.instance.Count;
         GlobalFireflyController.instance.Modify(flyLight, particles, count);
     }
 }

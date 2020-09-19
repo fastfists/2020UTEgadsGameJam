@@ -8,13 +8,13 @@ public class MainMenu : MonoBehaviour
    private bool isPaused = false;
 
 
-   public void playGame()
+   public void PlayGame()
     {
         SceneManager.LoadScene(1);
         isPaused = false;
         Time.timeScale = 1;
     }
-    public void exitToMain()
+    public void ExitToMain()
     {
         SceneManager.LoadScene(0);
     }
@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1;
     }
-    public bool getPauseStatus()
+    public bool GETPauseStatus()
     {
         return isPaused;
     }

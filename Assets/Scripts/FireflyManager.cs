@@ -9,7 +9,7 @@ public class FireflyManager : MonoBehaviour
     public int initialFirefliesCount = 5;
     public int maxFireflies = 30;
 
-    public int count {get; set;}
+    public int Count {get; private set;}
 
     // Start is called before the first frame update
     void Start()
@@ -17,20 +17,20 @@ public class FireflyManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            count = initialFirefliesCount;
+            Count = initialFirefliesCount;
         }
     }
 
     public void AddFireflies(int incr) {
-        if (count < maxFireflies) {
-            count += incr;
+        if (Count < maxFireflies) {
+            Count += incr;
         }
-        Debug.Log(count);
+        Debug.Log(Count);
     }
 
     public void RemoveFireflies(int incr) {
-        if (count > 0) {
-            count -= incr;
+        if (Count > 0) {
+            Count -= incr;
         }
     }
 }
