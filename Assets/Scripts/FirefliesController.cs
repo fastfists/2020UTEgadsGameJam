@@ -5,59 +5,53 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class FirefliesController : MonoBehaviour {
     // Start is called before the first frame update
-    public int initialFirefliesCount = 0;
 
     public float lightOffset = 0.2f;
-    public int maxFireflies = 30;
+
+    public float pointLightOuterRadiusMax;
+    public float pointLightOuterRadiusMin;
+
+    public float pointLightInnerRadiusMax;
+    public float pointLightInnerRadiusMin;
+
+    public float pointLightIntensityMax;
+    public float pointLightIntensityMin;
 
     private Light2D flyLight;
     private ParticleSystem particles;
     private float intensity;
-    private int count;
 
     void Start() {
         flyLight = GetComponent<Light2D>();
         particles = GetComponent<ParticleSystem>();
-        count = initialFirefliesCount;
         UpdateFlies();
     }
 
     void Update() {
-        flyLight.intensity = intensity;
+        UpdateFlies();
     }
 
-    public void addFireflies(int count) {
-        if (this.count < maxFireflies) {
-            this.count += count;
-            UpdateFlies();
-        }else {
-            Debug.Log("Im full damn nigg");
-        }
-    }
-
-    public void removeFireflies(int count) {
-        if (this.count > 0) {
-            this.count -= count;
-            UpdateFlies();
-        }
-    }
-        
     private void UpdateFlies() {
-        SetLight();
-        SetParticles();
+        int count = FireflyManager.instance.count;
+        SetLight(count);
+        SetParticles(count);
     }
 
-    private void SetParticles() {
+    private void SetParticles(int count) {
+        var main = particles.main;
+        main.maxParticles = count;
     }
 
-    private void SetLight() {
+    private void SetLight(int count) {
+        int maxFireflies = FireflyManager.instance.maxFireflies;
+
         intensity = Map((float)count, 0.0f, maxFireflies, 0.2f, 0.7f);
         flyLight.pointLightOuterRadius = Map((float)count, 0.0f, maxFireflies, 4.6f, 12.17f);
         flyLight.pointLightInnerRadius = Map((float)count, 0.0f, maxFireflies, 2.43f, 8.7f);
     }
 
-    private float Map(float s, float a1, float a2, float b1, float b2)
-    {
+    private float Map(float s, float a1, float a2, float b1, float b2) {
         return b1 + (s-a1)*(b2-b1)/(a2-a1);
     }
+
 }
