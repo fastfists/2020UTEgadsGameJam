@@ -22,8 +22,8 @@ public class PlayerController : MonoBehaviour
         if ( col.gameObject.CompareTag("Artifact") ) {
             var artifact = col.gameObject.GetComponent<Artifact>();
 
-            Debug.Log(Input.GetKey(KeyCode.E));
-            Debug.Log(artifact.hasBeenViewed);
+            //Debug.Log(Input.GetKey(KeyCode.E));
+            //Debug.Log(artifact.hasBeenViewed);
 
             if (Input.GetKey(KeyCode.E) && !artifact.hasBeenViewed) {
                 artifact.hasBeenViewed = true;

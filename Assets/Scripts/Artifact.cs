@@ -35,13 +35,14 @@ public class Artifact : MonoBehaviour
             image.color = spriteRenderer.color;
             panel.SetActive(true);
             GameObject.FindGameObjectWithTag("Pause").GetComponent<MainMenu>().Pause();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().UpdateInventory(title, description, spriteRenderer.sprite);
         }
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag == "Player")
         {
-            Debug.Log(collider.tag);
+            //Debug.Log(collider.tag);
             pressE.SetActive(true);
         }
     }
@@ -49,7 +50,7 @@ public class Artifact : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
-            Debug.Log(collider.tag);
+           // Debug.Log(collider.tag);
             pressE.SetActive(false);
         }
     }
