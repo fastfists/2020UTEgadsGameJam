@@ -8,11 +8,10 @@ public class FirefliesController : MonoBehaviour {
 
     public float lightOffset = 0.2f;
 
-    public float pointLightOuterRadiusMax;
-    public float pointLightOuterRadiusMin;
+    public float pointLightRadiusMax;
+    public float pointLightRadiusMin;
 
-    public float pointLightInnerRadiusMax;
-    public float pointLightInnerRadiusMin;
+    public float radiusRatio = 0.5f;
 
     public float pointLightIntensityMax;
     public float pointLightIntensityMin;
@@ -48,17 +47,15 @@ public class FirefliesController : MonoBehaviour {
                 pointLightIntensityMin, pointLightIntensityMax
                 );
 
-        flyLight.pointLightOuterRadius = Map(
+        float radius = Map(
                 (float)count,
                 0.0f, maxFireflies,
-                pointLightOuterRadiusMin, pointLightOuterRadiusMin
+                pointLightRadiusMin, pointLightRadiusMax
                 );
 
-        flyLight.pointLightInnerRadius = Map(
-                (float)count,
-                0.0f, maxFireflies,
-                pointLightInnerRadiusMin, pointLightInnerRadiusMax
-                );
+        flyLight.pointLightOuterRadius = radius / 0.5f;
+
+        flyLight.pointLightInnerRadius = radius * 0.5f;
     }
 
     private float Map(float s, float a1, float a2, float b1, float b2) {
