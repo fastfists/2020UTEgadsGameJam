@@ -6,10 +6,9 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
-
-    public int horizontalSpeed;
-    public int verticalSpeed;
-
+    private Vector2 moveVelocity;
+    public float speed;
+    
     void OnTriggerEnter2D(Collider2D col) {
         Debug.Log(col.gameObject.tag);
     }
@@ -59,7 +58,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -67,10 +66,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
+        Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        moveVelocity = moveInput.normalized * speed;
+    }
 
-
-        rb.velocity = new Vector2(x*horizontalSpeed, y*verticalSpeed);
+    void FixedUpdate() {
+        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);       
     }
 }
