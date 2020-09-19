@@ -11,8 +11,13 @@ public class Artifact : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
+    }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.tag=="Player")
+            Debug.Log(collider.tag);
     }
 }

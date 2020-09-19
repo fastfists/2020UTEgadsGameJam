@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.IO;
+
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -32,7 +33,6 @@ public class Player : MonoBehaviour
         {
             transform.position += Vector3.down * verticalSpeed * Time.deltaTime;
         }
-
     }
     
 }
