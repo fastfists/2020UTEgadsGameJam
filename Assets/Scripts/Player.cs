@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.IO;
 
+
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     public int horizontalSpeed;
     public int verticalSpeed;
+    private Collider2D collider;
     void Start()
     {
 
@@ -33,6 +35,29 @@ public class Player : MonoBehaviour
         {
             transform.position += Vector3.down * verticalSpeed * Time.deltaTime;
         }
+        if (collider)
+            OnTriggerEnter2D(collider);
+
+        
     }
-    
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Artifact")
+        {
+            this.collider = collider;
+            if (Input.GetKey(KeyCode.E)&& collider.gameObject.GetComponent<Artifact>().hasBeenViewed==false)
+            {
+                collider.gameObject.GetComponent<Artifact>().hasBeenViewed = true;
+                Debug.Log("Player hit trigger");
+            }
+        }
+    }
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.tag == "Artifact")
+        {
+            this.collider = null;
+        }
+    }
+
 }

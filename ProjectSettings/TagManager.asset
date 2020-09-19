@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Artifact
+  - MainCanvas
+  - Title
+  - Description
   layers:
   - Default
   - TransparentFX
