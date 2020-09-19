@@ -1,0 +1,3 @@
+[submodule "Packages/Packages/2d-extras"]
+	path = Packages/Packages/2d-extras
+	url = git@github.com:Unity-Technologies/2d-extras.git

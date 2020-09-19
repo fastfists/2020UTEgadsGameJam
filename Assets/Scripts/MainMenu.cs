@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private bool isPaused = false;
+   private bool isPaused = false;
+
+
    public void playGame()
     {
         SceneManager.LoadScene(1);

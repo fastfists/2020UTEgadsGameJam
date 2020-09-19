@@ -22,7 +22,6 @@ public class FireflyManager : MonoBehaviour
     }
 
     public void AddFireflies(int incr) {
-        Debug.Log("fdsfsdalf");
         if (count < maxFireflies) {
             count += incr;
         }
