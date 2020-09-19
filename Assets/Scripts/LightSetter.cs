@@ -15,7 +15,7 @@ public class LightSetter : MonoBehaviour
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E) || !hasUpdated) {
+        if (!hasUpdated) {
             foreach (var lamp in lamps) {
                 Debug.Log("Oh yea!!!");
                 var light = lamp.GetComponent<Light2D>();
