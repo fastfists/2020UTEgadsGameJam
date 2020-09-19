@@ -19,7 +19,6 @@ public class FirefliesController : MonoBehaviour {
 
     private Light2D flyLight;
     private ParticleSystem particles;
-    private float intensity;
 
     void Start() {
         flyLight = GetComponent<Light2D>();
@@ -45,9 +44,22 @@ public class FirefliesController : MonoBehaviour {
     private void SetLight(int count) {
         int maxFireflies = FireflyManager.instance.maxFireflies;
 
-        intensity = Map((float)count, 0.0f, maxFireflies, 0.2f, 0.7f);
-        flyLight.pointLightOuterRadius = Map((float)count, 0.0f, maxFireflies, 4.6f, 12.17f);
-        flyLight.pointLightInnerRadius = Map((float)count, 0.0f, maxFireflies, 2.43f, 8.7f);
+        flyLight.intensity = Map((float)count,
+                0.0f, maxFireflies,
+                pointLightIntensityMin, pointLightIntensityMax
+                );
+
+        flyLight.pointLightOuterRadius = Map(
+                (float)count,
+                0.0f, maxFireflies,
+                pointLightOuterRadiusMin, pointLightOuterRadiusMin
+                );
+
+        flyLight.pointLightInnerRadius = Map(
+                (float)count,
+                0.0f, maxFireflies,
+                pointLightInnerRadiusMin, pointLightInnerRadiusMax
+                );
     }
 
     private float Map(float s, float a1, float a2, float b1, float b2) {

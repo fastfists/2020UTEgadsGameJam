@@ -10,14 +10,10 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         Debug.Log(other.gameObject.tag);
         if ( other.gameObject.CompareTag("Scone") ) {
-            Debug.Log("HEY!!!");
             var ps = other.gameObject.GetComponent<ParticleSystem>();
-            Debug.Log(ps.main.maxParticles);
             FireflyManager.instance.AddFireflies(ps.main.maxParticles);
             Destroy(other.gameObject);
         }
-
-        Debug.Log("ouch");
     }
 
     void Start()
