@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public int horizontalSpeed;
     public int verticalSpeed;
     private Collider2D collider;
+    private bool isPaused;
     void Start()
     {
 
@@ -17,7 +18,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)))
         {
             transform.position += Vector3.right * horizontalSpeed * Time.deltaTime;
         }

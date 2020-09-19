@@ -8,6 +8,7 @@ TagManager:
   - MainCanvas
   - Title
   - Description
+  - Pause
   layers:
   - Default
   - TransparentFX

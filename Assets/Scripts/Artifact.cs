@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Reflection;
 
 public class Artifact : MonoBehaviour
 {
@@ -11,9 +12,10 @@ public class Artifact : MonoBehaviour
     public string title;
     public string description;
     public GameObject pressE;
-    public bool hasBeenViewed = false;
     public TextMeshProUGUI titlePro;
     public TextMeshProUGUI descriptionPro;
+    public Image image;
+    public bool hasBeenViewed = false;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -23,7 +25,10 @@ public class Artifact : MonoBehaviour
             artifact.SetActive(false);
             titlePro.text = title;
             descriptionPro.text = description;
+            image.sprite = artifact.GetComponent<SpriteRenderer>().sprite;
+            image.color = artifact.GetComponent<SpriteRenderer>().color;
             panel.SetActive(true);
+            GameObject.FindGameObjectWithTag("Pause").GetComponent<MainMenu>().Pause();
         }
     }
     private void OnTriggerEnter2D(Collider2D collider)
