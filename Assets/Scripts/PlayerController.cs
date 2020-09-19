@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,11 +12,6 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col) {
         Debug.Log(col.gameObject.tag);
-        if ( col.gameObject.CompareTag("Scone") ) {
-            var ps = col.gameObject.GetComponent<ParticleSystem>();
-            FireflyManager.instance.AddFireflies(ps.main.maxParticles);
-            Destroy(col.gameObject);
-        }
     }
 
     void OnTriggerStay2D(Collider2D col) {
@@ -25,8 +21,32 @@ public class PlayerController : MonoBehaviour
             Debug.Log(Input.GetKey(KeyCode.E));
             Debug.Log(artifact.hasBeenViewed);
 
-            if (Input.GetKey(KeyCode.E) && !artifact.hasBeenViewed) {
+            if (Input.GetKeyDown(KeyCode.E) && !artifact.hasBeenViewed) {
                 artifact.hasBeenViewed = true;
+            }
+        }
+        else if ( col.gameObject.CompareTag("Scone") ) {
+
+            var ps = col.gameObject.GetComponent<ParticleSystem>();
+            var mainPs = ps.main;
+            var light = col.gameObject.GetComponent<Light2D>();
+
+            if (Input.GetKeyDown(KeyCode.E) ) {
+                // Get the flies
+                FireflyManager.instance.AddFireflies(mainPs.maxParticles);
+
+                // edit the lights of the Lamp
+                GlobalFireflyController.instance.Modify(light, ps, 0);
+
+            }else if (Input.GetKey(KeyCode.Q)) {
+                // Drop off flies
+                int removeCount = FireflyManager.instance.count / 2;
+                FireflyManager.instance.RemoveFireflies(removeCount);
+
+                Debug.Log("Trade " + removeCount);
+
+                // edit the lights of the Lamp
+                GlobalFireflyController.instance.Modify(light, ps, mainPs.maxParticles + removeCount);
             }
         }
     }
@@ -49,6 +69,8 @@ public class PlayerController : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
+
+
         rb.velocity = new Vector2(x*horizontalSpeed, y*verticalSpeed);
     }
 }
