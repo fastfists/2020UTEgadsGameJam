@@ -6,7 +6,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class FirefliesController : MonoBehaviour {
     // Start is called before the first frame update
     public int initialFirefliesCount = 0;
-    public GameObject fireflies;
 
     public float lightOffset = 0.2f;
     public int maxFireflies = 30;
@@ -17,15 +16,14 @@ public class FirefliesController : MonoBehaviour {
     private int count;
 
     void Start() {
-        flyLight = fireflies.GetComponent<Light2D>();
-        particles = fireflies.GetComponent<ParticleSystem>();
+        flyLight = GetComponent<Light2D>();
+        particles = GetComponent<ParticleSystem>();
         count = initialFirefliesCount;
         UpdateFlies();
     }
 
     void Update() {
         flyLight.intensity = intensity;
-        addFireflies(1);
     }
 
     public void addFireflies(int count) {

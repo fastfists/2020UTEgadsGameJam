@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     public float speed = 7f;
     private Rigidbody2D rb;
 
+    void OnCollisionEnter2D(Collision2D col) {
+        Debug.Log("ouch");
+    }
     
     void Start()
     {
