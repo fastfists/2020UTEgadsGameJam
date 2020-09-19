@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Scone
+  - Artifact
+  - MainCanvas
+  - Title
+  - Description
+  - Pause
   layers:
   - Default
   - TransparentFX

@@ -23,7 +23,6 @@ public class FirefliesController : MonoBehaviour {
     void Start() {
         flyLight = GetComponent<Light2D>();
         particles = GetComponent<ParticleSystem>();
-        UpdateFlies();
     }
 
     void Update() {
