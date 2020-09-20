@@ -7,6 +7,9 @@ using UnityEngine;
 using TMPro;
 using System.Security.Cryptography;
 using System.Security.Policy;
+using UnityEngine.UI;
+using DG.Tweening;
+using System.Runtime.InteropServices;
 
 public class Inventory : MonoBehaviour
 {
@@ -16,7 +19,10 @@ public class Inventory : MonoBehaviour
     Item item = new Item();
     [SerializeField] GameObject buttonPrefab;
     [SerializeField] Transform inventoryPanel;
-    int yChange = 0;
+    public RectTransform inventoryPanelDO;
+    public int invenDisplacement;
+    public bool isOpen=false;
+
     public void UpdateInventory(string title, string description, Sprite sprite)
     {
         item.title = title;
@@ -34,7 +40,16 @@ public class Inventory : MonoBehaviour
         button.GetComponentInChildren<TextMeshProUGUI>().text = title;
         //button.GetComponent<button>().onClick.addListener
         button.transform.SetParent(inventoryPanel.transform, false);
-        //button.transform.position.y -= 40;
         Debug.Log(button.transform.position.y);
+    }
+    public void OpenInven()
+    {
+        isOpen = true;
+        inventoryPanelDO.DOAnchorPos(new Vector2(invenDisplacement,0), .50f);
+    }
+    public void CloseInven()
+    {
+        isOpen = false;
+        inventoryPanelDO.DOAnchorPos(new Vector2(invenDisplacement*2, 0), .50f);
     }
 }
