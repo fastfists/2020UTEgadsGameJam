@@ -20,4 +20,8 @@ public class FollowGameObject : MonoBehaviour
     void Update() {
         transform.position = (Vector2)target.position + offset;
     }
+
+    void Switch(GameObject newTarget) {
+        target = newTarget;
+    }
 }
