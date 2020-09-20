@@ -11,6 +11,7 @@ TagManager:
   - Pause
   - FireFlies
   - Lamp
+  - Trees
   layers:
   - Default
   - TransparentFX
@@ -53,4 +54,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1482814271
+    locked: 0
+  - name: Foliage
+    uniqueID: 20909759
+    locked: 0
+  - name: UI
+    uniqueID: 3480093879
     locked: 0

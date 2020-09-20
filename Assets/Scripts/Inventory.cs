@@ -10,18 +10,20 @@ using System.Security.Policy;
 using UnityEngine.UI;
 using DG.Tweening;
 using System.Runtime.InteropServices;
+using UnityEngine.Serialization;
 
 public class Inventory : MonoBehaviour
 {
 
     Dictionary<int, Item> inventory = new Dictionary<int, Item>();
-    int currentKeyIndex = 1;
+    private int currentKeyIndex = 1;
     Item item = new Item();
-    [SerializeField] GameObject buttonPrefab;
+    [SerializeField] private GameObject buttonPrefab;
     [SerializeField] Transform inventoryPanel;
-    public RectTransform inventoryPanelDO;
+    [FormerlySerializedAs("inventoryPanelDO")] public RectTransform inventoryPanelDo;
     public int invenDisplacement;
     public bool isOpen=false;
+    
 
     public void UpdateInventory(string title, string description, Sprite sprite)
     {
@@ -36,20 +38,19 @@ public class Inventory : MonoBehaviour
     }
     public void MakeButtonPrefab(string title)
     {
-        GameObject button = (GameObject)Instantiate(buttonPrefab);
+        GameObject button = (GameObject)Instantiate(buttonPrefab, inventoryPanel.transform, false);
         button.GetComponentInChildren<TextMeshProUGUI>().text = title;
         //button.GetComponent<button>().onClick.addListener
-        button.transform.SetParent(inventoryPanel.transform, false);
         Debug.Log(button.transform.position.y);
     }
     public void OpenInven()
     {
         isOpen = true;
-        inventoryPanelDO.DOAnchorPos(new Vector2(invenDisplacement,0), .50f);
+        inventoryPanelDo.DOAnchorPos(new Vector2(invenDisplacement,0), .50f);
     }
     public void CloseInven()
     {
         isOpen = false;
-        inventoryPanelDO.DOAnchorPos(new Vector2(invenDisplacement*2, 0), .50f);
+        inventoryPanelDo.DOAnchorPos(new Vector2(invenDisplacement*2, 0), .50f);
     }
 }

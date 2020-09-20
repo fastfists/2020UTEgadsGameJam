@@ -11,12 +11,15 @@
         <e p="Editor" t="Include">
           <e p="SceneSwitcher.cs" t="Include" />
         </e>
+        <e p="GameObjectCreator.cs" t="Include" />
+        <e p="HeardManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Artifact.cs" t="Include" />
           <e p="FirefliesController.cs" t="Include" />
           <e p="FireflyManager.cs" t="Include" />
           <e p="FollowGameObject.cs" t="Include" />
           <e p="GlobalFireflyController.cs" t="Include" />
+          <e p="HoardManager.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="Item.cs" t="Include" />
           <e p="LanternController.cs" t="Include" />

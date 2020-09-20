@@ -1,0 +1,1427 @@
+fileFormatVersion: 2
+guid: 2437ac4267a05f54bbf32c5087bb2ccc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 596680246848717038
+    second: Hershey_0
+  - first:
+      213: 5076687911913009960
+    second: Hershey_1
+  - first:
+      213: -4641554137732997618
+    second: Hershey_2
+  - first:
+      213: 9174163754377527036
+    second: Hershey_3
+  - first:
+      213: -1290736164760606466
+    second: Hershey_4
+  - first:
+      213: -8296423437720833568
+    second: Hershey_5
+  - first:
+      213: -4992527555389375029
+    second: Hershey_6
+  - first:
+      213: 1678018665967469286
+    second: Hershey_7
+  - first:
+      213: -7546222785262139471
+    second: Hershey_0
+  - first:
+      213: 2329518573409776409
+    second: Hershey_8
+  - first:
+      213: 401090234697378970
+    second: Hershey_9
+  - first:
+      213: 8552625446039040808
+    second: Hershey_10
+  - first:
+      213: -8358569394507668723
+    second: Hershey_11
+  - first:
+      213: -9126207926340536042
+    second: Hershey_12
+  - first:
+      213: -4894641684848814581
+    second: Hershey_13
+  - first:
+      213: -2796447049937835413
+    second: Hershey_14
+  - first:
+      213: -8189266196139638525
+    second: Hershey_15
+  - first:
+      213: -6754738791455611142
+    second: Hershey_16
+  - first:
+      213: -8911033379522789801
+    second: Hershey_17
+  - first:
+      213: -7102353361799777265
+    second: Hershey_18
+  - first:
+      213: 7384839988291613964
+    second: Hershey_19
+  - first:
+      213: -2742303794868526378
+    second: Hershey_20
+  - first:
+      213: -5188896720866830135
+    second: Hershey_21
+  - first:
+      213: 2777828680931439767
+    second: Hershey_22
+  - first:
+      213: -2910391269507823025
+    second: Hershey_23
+  - first:
+      213: 6234061450248708689
+    second: Hershey_1
+  - first:
+      213: -7947386875436330830
+    second: Hershey_2
+  - first:
+      213: 6737989236527763416
+    second: Hershey_3
+  - first:
+      213: 2246428470959152725
+    second: Hershey_4
+  - first:
+      213: -1265352342350275228
+    second: Hershey_5
+  - first:
+      213: 4177640345893486492
+    second: Hershey_6
+  - first:
+      213: 7999547456414928118
+    second: Hershey_7
+  - first:
+      213: 4476528405523991664
+    second: Hershey_8
+  - first:
+      213: -2944992535844020698
+    second: Hershey_9
+  - first:
+      213: -829699855650741761
+    second: Hershey_10
+  - first:
+      213: -6738653216566922316
+    second: Hershey_11
+  - first:
+      213: -7409798365622646471
+    second: Hershey_12
+  - first:
+      213: -1386745826293126426
+    second: Hershey_13
+  - first:
+      213: -2185680875500159505
+    second: Hershey_14
+  - first:
+      213: 5631333760479013046
+    second: Hershey_15
+  - first:
+      213: 5910191279547377749
+    second: Hershey_16
+  - first:
+      213: 2503002017384765878
+    second: Hershey_17
+  - first:
+      213: -1814004770222282444
+    second: Hershey_18
+  - first:
+      213: 8827957637314712727
+    second: Hershey_19
+  - first:
+      213: 638516982637750055
+    second: Hershey_20
+  - first:
+      213: -5058791107188070265
+    second: Hershey_21
+  - first:
+      213: 5263718447988910847
+    second: Hershey_22
+  - first:
+      213: -9205912026648026581
+    second: Hershey_23
+  - first:
+      213: -3141373773884695701
+    second: Hershey_24
+  - first:
+      213: 6319129107193844391
+    second: Hershey_25
+  - first:
+      213: 8483060978558329996
+    second: Hershey_26
+  - first:
+      213: -6106213138547536780
+    second: Hershey_27
+  - first:
+      213: -6147969370456037782
+    second: Hershey_28
+  - first:
+      213: 3981742015760206454
+    second: Hershey_29
+  - first:
+      213: -9067962809830014902
+    second: Hershey_30
+  - first:
+      213: -1594531484156164221
+    second: Hershey_31
+  - first:
+      213: 4926033367182268772
+    second: Hershey_32
+  - first:
+      213: -8533615991292223668
+    second: Hershey_33
+  - first:
+      213: -5272437421663081378
+    second: Hershey_34
+  - first:
+      213: -7387003621938986765
+    second: Hershey_35
+  - first:
+      213: 6623409435716006718
+    second: Hershey_36
+  - first:
+      213: -49683748775464536
+    second: Hershey_37
+  - first:
+      213: -1572690757595265326
+    second: Hershey_38
+  - first:
+      213: 8818108808623001493
+    second: Hershey_39
+  - first:
+      213: 2891994184899635799
+    second: Hershey_40
+  - first:
+      213: 3409816931477139337
+    second: Hershey_41
+  - first:
+      213: 2308925080911280587
+    second: Hershey_42
+  - first:
+      213: -5513281203015103326
+    second: Hershey_43
+  - first:
+      213: -8823421317067177579
+    second: Hershey_44
+  - first:
+      213: -8095392898172142039
+    second: Hershey_45
+  - first:
+      213: -2468945261148041473
+    second: Hershey_46
+  - first:
+      213: 8888700276656817925
+    second: Hershey_47
+  - first:
+      213: 4585415213938157811
+    second: Hershey_24
+  - first:
+      213: -1200736479972772361
+    second: Hershey_25
+  - first:
+      213: -870647881298564763
+    second: Hershey_26
+  - first:
+      213: 3345953462421507079
+    second: Hershey_27
+  - first:
+      213: 2891162402886294031
+    second: Hershey_28
+  - first:
+      213: 7678740778110378956
+    second: Hershey_29
+  - first:
+      213: 5687914174439794841
+    second: Hershey_30
+  - first:
+      213: -2293196885709989611
+    second: Hershey_31
+  - first:
+      213: 9098908207295529176
+    second: Hershey_32
+  - first:
+      213: -8720204300771826181
+    second: Hershey_33
+  - first:
+      213: -9031420641971562306
+    second: Hershey_34
+  - first:
+      213: 3282117113746779880
+    second: Hershey_35
+  - first:
+      213: -1453695350147774182
+    second: Hershey_36
+  - first:
+      213: 4417411360011641314
+    second: Hershey_37
+  - first:
+      213: -2236798605996704986
+    second: Hershey_38
+  - first:
+      213: -4361626470956223563
+    second: Hershey_39
+  - first:
+      213: -4870908707354780317
+    second: Hershey_40
+  - first:
+      213: 1145358896741315377
+    second: Hershey_41
+  - first:
+      213: -3784037717631706985
+    second: Hershey_42
+  - first:
+      213: 8004969160716581571
+    second: Hershey_43
+  - first:
+      213: -3429140264339585260
+    second: Hershey_44
+  - first:
+      213: 5464618387398545000
+    second: Hershey_45
+  - first:
+      213: -9207750775065963954
+    second: Hershey_46
+  - first:
+      213: 6805979225491986813
+    second: Hershey_47
+  - first:
+      213: -4442375113795475689
+    second: Hershey_48
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hershey_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7cd70cb5e664790800000000000000
+      internalID: -7546222785262139471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152e70a0cd5d38650800000000000000
+      internalID: 6234061450248708689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0140d6eb535b190800000000000000
+      internalID: -7947386875436330830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_3
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df84afd285228d50800000000000000
+      internalID: 6737989236527763416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_4
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e18d0dacaec2f10800000000000000
+      internalID: 2246428470959152725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_5
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46dd08eafb0907ee0800000000000000
+      internalID: -1265352342350275228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_6
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f3250b2c5f9f930800000000000000
+      internalID: 4177640345893486492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_7
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fccd77370a140f60800000000000000
+      internalID: 7999547456414928118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_8
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c043efdd2df1e30800000000000000
+      internalID: 4476528405523991664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_9
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e17d254e84127d0800000000000000
+      internalID: -2944992535844020698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_10
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1aeb190605c74f0800000000000000
+      internalID: -829699855650741761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_11
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 645
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b33cf93a9e7b72a0800000000000000
+      internalID: -6738653216566922316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939cacf25ab1b2990800000000000000
+      internalID: -7409798365622646471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eaea0ea40a41cce0800000000000000
+      internalID: -1386745826293126426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_14
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedb27fe2d6eaa1e0800000000000000
+      internalID: -2185680875500159505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_15
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b824051834862e40800000000000000
+      internalID: 5631333760479013046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_16
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558680cb7a7350250800000000000000
+      internalID: 5910191279547377749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_17
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b91e46c2137cb220800000000000000
+      internalID: 2503002017384765878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_18
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4396902c54c53d6e0800000000000000
+      internalID: -1814004770222282444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_19
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7941758d2b4338a70800000000000000
+      internalID: 8827957637314712727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_20
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7276d2d00d77cd800800000000000000
+      internalID: 638516982637750055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_21
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78866276a409bc9b0800000000000000
+      internalID: -5058791107188070265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_22
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaac024a0c7c0940800000000000000
+      internalID: 5263718447988910847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_23
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 430
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22e52a69c70e3080800000000000000
+      internalID: -9205912026648026581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8a47ea7daa2af30800000000000000
+      internalID: 4585415213938157811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_25
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5be528880265fe0800000000000000
+      internalID: -1200736479972772361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_26
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569a0c66d56dae3f0800000000000000
+      internalID: -870647881298564763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_27
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c4f9a42f63f6e20800000000000000
+      internalID: 3345953462421507079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_28
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a900c23e87f1820800000000000000
+      internalID: 2891162402886294031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_29
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc36391dd0e509a60800000000000000
+      internalID: 7678740778110378956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_30
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998a4684ec78fee40800000000000000
+      internalID: 5687914174439794841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_31
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5195933159dec20e0800000000000000
+      internalID: -2293196885709989611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_32
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d08cb37ec0d54e70800000000000000
+      internalID: 9098908207295529176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_33
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf569abd36c9bf680800000000000000
+      internalID: -8720204300771826181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_34
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb89722d6c2f9a280800000000000000
+      internalID: -9031420641971562306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_35
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 215
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee6b14202c6c8d20800000000000000
+      internalID: 3282117113746779880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a190ec2f7cf63dbe0800000000000000
+      internalID: -1453695350147774182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_37
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1e44c3a3ccd4d30800000000000000
+      internalID: 4417411360011641314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_38
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b3a77d48b45f0e0800000000000000
+      internalID: -2236798605996704986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_39
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3b6b365d36873c0800000000000000
+      internalID: -4361626470956223563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_40
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36dd2cc765e076cb0800000000000000
+      internalID: -4870908707354780317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_41
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133799429d125ef00800000000000000
+      internalID: 1145358896741315377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_42
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798d1e79eb56c7bc0800000000000000
+      internalID: -3784037717631706985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_43
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3caf77e1a0d571f60800000000000000
+      internalID: 8004969160716581571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_44
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417cc03191f3960d0800000000000000
+      internalID: -3429140264339585260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_45
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e45f5787936db40800000000000000
+      internalID: 5464618387398545000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_46
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e429ddf647f773080800000000000000
+      internalID: -9207750775065963954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hershey_47
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 0
+        width: 215.41667
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d795324cb02b37e50800000000000000
+      internalID: 6805979225491986813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
