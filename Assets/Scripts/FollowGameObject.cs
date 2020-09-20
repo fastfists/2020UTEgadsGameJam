@@ -13,14 +13,15 @@ public class FollowGameObject : MonoBehaviour
 
     void Start() {
         center = target.position;
-        angle = Random.Range(-1, 1);
+        angle = Random.Range(-360, 360);
     }
 
     // Update is called once per frame
     void Update() {
         center = target.position;
 
-        angle += rotateSpeed*Time.deltaTime;
+        angle += rotateSpeed * Time.deltaTime;
+
         var offset = new Vector2(Mathf.Sin(angle), Mathf.Cos(angle));
 
         transform.position = center + offset;
