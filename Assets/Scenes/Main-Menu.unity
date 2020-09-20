@@ -327,7 +327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362652253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -63.8992, y: 125.84479, z: -2382.3987}
+  m_LocalPosition: {x: -63.8992, y: 3.83, z: -2382.3987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 862830926}
@@ -937,7 +937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &862830926
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1236,13 +1236,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.20392157}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9cecd2aa5103b16448080a72a430a689, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6879f0711a11c364aa6c05de08317072, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
