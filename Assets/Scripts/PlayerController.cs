@@ -43,8 +43,10 @@ public class PlayerController : MonoBehaviour
                 Debug.Log($"Gained {hoard.count} Firefly");
                 // edit the lights of the Lamp
                 GlobalFireflyController.instance.Modify(hoard, 0);
+                pressE.SetActive(false);
 
-            }else if (Input.GetKeyDown(KeyCode.Q)) {
+            }
+            else if (Input.GetKeyDown(KeyCode.Q)) {
                 // Drop off flies
                 int removeCount = GlobalFireflyCounter.instance.Count / 2;
                 GlobalFireflyCounter.instance.RemoveFireflies(removeCount);
@@ -73,6 +75,10 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
 
         moveVelocity = moveInput.normalized * speed;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void FixedUpdate() {

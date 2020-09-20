@@ -28,6 +28,10 @@ public class MainMenu : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1;
     }
+    public void Quit()
+    {
+        Application.Quit();
+    }
     public bool GETPauseStatus()
     {
         return isPaused;
