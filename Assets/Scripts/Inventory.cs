@@ -14,39 +14,60 @@ using System.Runtime.InteropServices;
 public class Inventory : MonoBehaviour
 {
 
-    Dictionary<int, Item> inventory = new Dictionary<int, Item>();
-    int currentKeyIndex = 1;
+    List<Item> inventory = new List<Item>();
+    List<GameObject> buttons = new List<GameObject>();
+
     Item item = new Item();
     [SerializeField] GameObject buttonPrefab;
     [SerializeField] Transform inventoryPanel;
+
     public RectTransform inventoryPanelDO;
     public int invenDisplacement;
     public bool isOpen=false;
+    public float canvasHeight;
+
+    void Start() 
+    {
+        RectTransform rectTransform = GetComponent<RectTransform>();
+    }
 
     public void UpdateInventory(string title, string description, Sprite sprite)
     {
         item.title = title;
         item.description = description;
         item.sprite = sprite;
-        inventory.Add(currentKeyIndex, item);
-        currentKeyIndex++;
-        Debug.Log(inventory.Count);
+        inventory.Add(item);
+
         MakeButtonPrefab(title);
+
+
         //CreateButton();
+
+        for (int i = 0; i < buttons.Count; i++) {
+            var button = buttons[i];
+            button.transform.SetParent(inventoryPanel.transform, false);
+            button.transform.position += new Vector3(0, i*canvasHeight / buttons.Count, 0);
+        }
+
     }
+
     public void MakeButtonPrefab(string title)
     {
         GameObject button = (GameObject)Instantiate(buttonPrefab);
         button.GetComponentInChildren<TextMeshProUGUI>().text = title;
         //button.GetComponent<button>().onClick.addListener
         button.transform.SetParent(inventoryPanel.transform, false);
-        Debug.Log(button.transform.position.y);
+        buttons.Add(button);
     }
+
     public void OpenInven()
     {
+        
         isOpen = true;
         inventoryPanelDO.DOAnchorPos(new Vector2(invenDisplacement,0), .50f);
+
     }
+
     public void CloseInven()
     {
         isOpen = false;
