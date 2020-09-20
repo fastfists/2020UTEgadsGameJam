@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
             var hoard = col.gameObject.GetComponent<HoardManager>();
 
-            if (Input.GetKeyDown(KeyCode.E) ) {
+            if (Input.GetKey(KeyCode.E) ) {
                 // Get the flies
                 GlobalFireflyCounter.instance.AddFireflies(hoard.count);
                 Debug.Log($"Gained {hoard.count} Firefly");
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
         if ( col.gameObject.CompareTag("Artifact") ) {
             var artifact = col.gameObject.GetComponent<Artifact>();
             if (artifact.hasBeenViewed){
-                Destroy(col.gameObject);
+                col.gameObject.SetActive(false);
             }
         }
     }
