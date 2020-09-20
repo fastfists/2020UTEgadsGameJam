@@ -5,23 +5,35 @@ using UnityEngine;
 public class FollowGameObject : MonoBehaviour
 {
     // Start is called before the first frame update
-
     public Transform target;
-    public Vector2 offset;
+    private Vector2 center;
+    public float rotateSpeed;
 
-    private Rigidbody2D rb;
-    private Vector2 movement;
+    private float angle = 0;
 
     void Start() {
-        rb = GetComponent<Rigidbody2D>();
+        center = target.position;
+        angle = Random.Range(-1, 1);
     }
 
     // Update is called once per frame
     void Update() {
-        transform.position = (Vector2)target.position + offset;
+        center = target.position;
+
+        angle += rotateSpeed*Time.deltaTime;
+        var offset = new Vector2(Mathf.Sin(angle), Mathf.Cos(angle));
+
+        transform.position = center + offset;
+        Debug.Log(center + offset);
+    }
+
+    void FixedUpdate() {
     }
 
     void Switch(Transform newTarget) {
         target = newTarget;
     }
+
+
+
 }
