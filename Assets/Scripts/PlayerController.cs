@@ -9,13 +9,12 @@ public class PlayerController : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
-    private Inventory inven;
     public Animator animator;
+    public GameObject pressE;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        inven = GetComponent<Inventory>();
     }
 
     void OnTriggerEnter2D(Collider2D col) {
@@ -31,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.E) && !artifact.hasBeenViewed) {
                 artifact.hasBeenViewed = true;
+                pressE.SetActive(false);
             }
         }
         else if ( col.gameObject.CompareTag("Lamp") ) {
@@ -73,13 +73,6 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
 
         moveVelocity = moveInput.normalized * speed;
-        if (Input.GetKey(KeyCode.I))
-        {
-            if (inven.isOpen)
-                inven.CloseInven();
-            else 
-                inven.OpenInven(); 
-        }
     }
 
     void FixedUpdate() {

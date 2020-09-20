@@ -35,7 +35,6 @@ public class Artifact : MonoBehaviour
             image.color = spriteRenderer.color;
             panel.SetActive(true);
             GameObject.FindGameObjectWithTag("Pause").GetComponent<MainMenu>().Pause();
-            player.GetComponent<Inventory>().UpdateInventory(title, description, spriteRenderer.sprite);
         }
     }
     void OnTriggerEnter2D(Collider2D collider2D)
