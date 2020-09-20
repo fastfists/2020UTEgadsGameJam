@@ -137,7 +137,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8cdaa5f03eb9f6a73bc81821a9c2c68e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 105d644a1463c1d9dbf22125238f210c, type: 3}
   m_Color: {r: 0.2924528, g: 1, b: 0.9333935, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -177,4 +177,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireflyPrefab: {fileID: 0}
-  initialCount: 3
+  initialCount: 0
