@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
@@ -8,10 +9,12 @@ public class PlayerController : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
+    private Inventory inven;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        inven = GetComponent<Inventory>();
     }
 
     void OnTriggerEnter2D(Collider2D col) {
@@ -66,6 +69,13 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
+        if (Input.GetKey(KeyCode.I))
+        {
+            if (inven.isOpen)
+                inven.CloseInven();
+            else 
+                inven.OpenInven(); 
+        }
     }
 
     void FixedUpdate() {
