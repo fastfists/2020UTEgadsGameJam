@@ -24,16 +24,10 @@ public class FollowGameObject : MonoBehaviour
         var offset = new Vector2(Mathf.Sin(angle), Mathf.Cos(angle));
 
         transform.position = center + offset;
-        Debug.Log(center + offset);
     }
 
-    void FixedUpdate() {
-    }
-
-    void Switch(Transform newTarget) {
+    public void Switch(Transform newTarget) {
         target = newTarget;
     }
-
-
 
 }

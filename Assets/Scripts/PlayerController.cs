@@ -31,16 +31,14 @@ public class PlayerController : MonoBehaviour
         }
         else if ( col.gameObject.CompareTag("Lamp") ) {
 
-            var ps = col.gameObject.GetComponent<ParticleSystem>();
-            var mainPs = ps.main;
-            var light2D = col.gameObject.GetComponent<Light2D>();
+            var hoard = col.gameObject.GetComponent<HoardManager>();
 
             if (Input.GetKeyDown(KeyCode.E) ) {
                 // Get the flies
-                FireflyManager.instance.AddFireflies(mainPs.maxParticles);
-                Debug.Log($"Gained {mainPs.maxParticles} Firefly");
+                FireflyManager.instance.AddFireflies(hoard.count);
+                Debug.Log($"Gained {hoard.count} Firefly");
                 // edit the lights of the Lamp
-                GlobalFireflyController.instance.Modify(light2D, ps, 0);
+                GlobalFireflyController.instance.Modify(hoard, 0);
 
             }else if (Input.GetKeyDown(KeyCode.Q)) {
                 // Drop off flies
@@ -50,7 +48,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log($"Deposited {removeCount} Firefly ");
 
                 // edit the lights of the Lamp
-                GlobalFireflyController.instance.Modify(light2D, ps, mainPs.maxParticles + removeCount);
+                GlobalFireflyController.instance.Modify(hoard, hoard.count + removeCount);
             }
         }
     }

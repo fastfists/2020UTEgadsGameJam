@@ -8,22 +8,21 @@ public class LightSetter : MonoBehaviour
     private GameObject[] lamps;
     private bool hasUpdated;
 
-    void Start()
-    {
-        lamps = GameObject.FindGameObjectsWithTag("Lamp");
-        hasUpdated = false;
-    }
+    /* void Start() */
+    /* { */
+    /*     lamps = GameObject.FindGameObjectsWithTag("Lamp"); */
+    /*     hasUpdated = false; */
+    /* } */
 
-    void Update() {
-        if (!hasUpdated) {
-            foreach (var lamp in lamps) {
-                var light = lamp.GetComponent<Light2D>();
-                var ps = lamp.GetComponent<ParticleSystem>();
-                var main = ps.main;
+    /* void Update() { */
+    /*     if (!hasUpdated) { */
+    /*         foreach (var lamp in lamps) { */
+    /*             var light = lamp.GetComponent<Light2D>(); */
+    /*             var hoard = lamp.GetComponent<HoardManager>(); */
 
-                GlobalFireflyController.instance.Modify(light, ps, main.maxParticles);
-            }
-            hasUpdated = true;
-        }
-    }
+    /*             GlobalFireflyController.instance.Modify(light, hoard, hoard.count); */
+    /*         } */
+    /*         hasUpdated = true; */
+    /*     } */
+    /* } */
 }

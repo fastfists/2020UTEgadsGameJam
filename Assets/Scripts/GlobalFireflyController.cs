@@ -21,31 +21,34 @@ public class GlobalFireflyController : MonoBehaviour {
         }
     }
 
-    public void Modify(Light2D light, ParticleSystem ps, int count) {
-        SetParticleSystem(ps, count);
-        SetLight(light, count);
+    public void Modify(HoardManager hoard, int count) {
+        hoard.count = count;
+        SetLight(hoard.getLights(), count);
     }
 
-    public void SetParticleSystem(ParticleSystem ps, int count) {
-        var main = ps.main;
-        main.maxParticles = count;
-    }
 
-    public void SetLight(Light2D light, int count) {
+    public void SetLight(List<Light2D> lights, int count) {
         int maxFireflies = FireflyManager.instance.maxFireflies;
-        light.intensity = Map((float)count,
+
+        float intensity = Map((float)count,
                 0.0f, maxFireflies,
                 pointLightIntensityMin, pointLightIntensityMax
                 );
-
         float radius = Map(
                 (float)count,
                 0.0f, maxFireflies,
                 pointLightRadiusMin, pointLightRadiusMax
                 );
-        light.pointLightOuterRadius = radius / 0.5f;
 
-        light.pointLightInnerRadius = radius * 0.5f;
+        float pointLightOuterRadius = radius / 0.5f;
+        float pointLightInnerRadius = radius * 0.5f;
+
+        foreach(Light2D light in lights) {
+            light.intensity = intensity;
+            light.pointLightOuterRadius = radius / 0.5f;
+            light.pointLightInnerRadius = radius * 0.5f;
+        }
+
     }
 
     private static float Map(float s, float a1, float a2, float b1, float b2) {

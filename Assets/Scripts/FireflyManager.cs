@@ -22,10 +22,10 @@ public class FireflyManager : MonoBehaviour
     }
 
     public void AddFireflies(int incr) {
+        Debug.Log(incr);
         if (Count < maxFireflies) {
             Count += incr;
         }
-        Debug.Log(Count);
     }
 
     public void RemoveFireflies(int incr) {
