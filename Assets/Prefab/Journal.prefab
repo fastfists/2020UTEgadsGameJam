@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1507539359458732708}
   - component: {fileID: 1507539359458732709}
   m_Layer: 9
-  m_Name: Artifact
+  m_Name: Journal
   m_TagString: Artifact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 1482814271
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eba8fd12be1434dc1ad24390c1f5d5c1, type: 3}
-  m_Color: {r: 0.018511912, g: 0.9811321, b: 0.13774216, a: 1}
+  m_Sprite: {fileID: 21300000, guid: c8fc4064e7488f60b984dbe0b74c3fb7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,8 +113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
   artifact: {fileID: 1507539359458732696}
-  title: HEy Hey
-  description: Testing testing 123!!
+  title: Pool of blood...
+  description: what happened..?
   pressE: {fileID: 0}
   titlePro: {fileID: 0}
   descriptionPro: {fileID: 0}
