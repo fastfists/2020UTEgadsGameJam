@@ -6,6 +6,7 @@ using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 using TMPro;
 using System.Security.Cryptography;
+using System.Security.Policy;
 
 public class Inventory : MonoBehaviour
 {
@@ -26,7 +27,6 @@ public class Inventory : MonoBehaviour
         Debug.Log(inventory.Count);
         MakeButtonPrefab(title);
         //CreateButton();
-
     }
     public void MakeButtonPrefab(string title)
     {
@@ -34,17 +34,7 @@ public class Inventory : MonoBehaviour
         button.GetComponentInChildren<TextMeshProUGUI>().text = title;
         //button.GetComponent<button>().onClick.addListener
         button.transform.SetParent(inventoryPanel.transform, false);
-       // button.transform.position.y += yChange;
+        //button.transform.position.y -= 40;
+        Debug.Log(button.transform.position.y);
     }
-    /*public static void CreateButton()
-    {
-        var button = Object.Instantiate(buttonPrefab, Vector3.zero, Quaternion.identity) as Button;
-        var rectTransform = button.GetComponent<RectTransform>();
-        rectTransform.SetParent(inventoryPanel.transform);
-        //rectTransform.anchorMax = cornerTopRight;
-        //rectTransform.anchorMin = cornerBottomLeft;
-        rectTransform.offsetMax = Vector2.zero;
-        rectTransform.offsetMin = Vector2.zero;
-        
-    }*/
 }

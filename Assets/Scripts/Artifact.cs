@@ -18,7 +18,7 @@ public class Artifact : MonoBehaviour
     public bool hasBeenViewed = false;
 
     private SpriteRenderer spriteRenderer;
-
+    private GameObject player;
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -35,13 +35,15 @@ public class Artifact : MonoBehaviour
             image.color = spriteRenderer.color;
             panel.SetActive(true);
             GameObject.FindGameObjectWithTag("Pause").GetComponent<MainMenu>().Pause();
+            player.GetComponent<Inventory>().UpdateInventory(title, description, spriteRenderer.sprite);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collider2D)
+    void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if (GetComponent<Collider>().tag == "Player")
+        if (collider2D.gameObject.CompareTag("Player"))
         {
-            Debug.Log(GetComponent<Collider>().tag);
+            //Debug.Log(GetComponent<Collider>().tag);
+            player = collider2D.gameObject;
             pressE.SetActive(true);
         }
     }
@@ -49,7 +51,7 @@ public class Artifact : MonoBehaviour
     {
         if (GetComponent<Collider>().tag == "Player")
         {
-            Debug.Log(GetComponent<Collider>().tag);
+            //Debug.Log(GetComponent<Collider>().tag);
             pressE.SetActive(false);
         }
     }
