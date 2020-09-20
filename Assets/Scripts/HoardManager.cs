@@ -55,6 +55,7 @@ public class HoardManager : MonoBehaviour {
                     Destroy(firefly);
                 }
                 fireflies.RemoveRange(0, removeCount);
+                lights.RemoveRange(0, removeCount);
             }
         }
     }
