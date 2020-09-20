@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
         //Lamp Collision Check
             else if ( col.gameObject.CompareTag("Lamp") ) {
 
+<<<<<<< HEAD
                 var ps = col.gameObject.GetComponent<ParticleSystem>();
                 var mainPs = ps.main;
                 var light2D = col.gameObject.GetComponent<Light2D>();
@@ -58,6 +59,26 @@ public class PlayerController : MonoBehaviour
                     // edit the lights of the Lamp
                     GlobalFireflyController.instance.Modify(light2D, ps, mainPs.maxParticles + removeCount);
                 }
+=======
+            var hoard = col.gameObject.GetComponent<HoardManager>();
+
+            if (Input.GetKeyDown(KeyCode.E) ) {
+                // Get the flies
+                GlobalFireflyCounter.instance.AddFireflies(hoard.count);
+                Debug.Log($"Gained {hoard.count} Firefly");
+                // edit the lights of the Lamp
+                GlobalFireflyController.instance.Modify(hoard, 0);
+
+            }else if (Input.GetKeyDown(KeyCode.Q)) {
+                // Drop off flies
+                int removeCount = GlobalFireflyCounter.instance.Count / 2;
+                GlobalFireflyCounter.instance.RemoveFireflies(removeCount);
+                
+                Debug.Log($"Deposited {removeCount} Firefly ");
+
+                // edit the lights of the Lamp
+                GlobalFireflyController.instance.Modify(hoard, hoard.count + removeCount);
+>>>>>>> 567f5020d0eb27be25e03566f7165852d8a7b061
             }
     }
 

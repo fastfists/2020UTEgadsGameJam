@@ -18,10 +18,9 @@ public class LightSetter : MonoBehaviour
         if (!hasUpdated) {
             foreach (var lamp in lamps) {
                 var light = lamp.GetComponent<Light2D>();
-                var ps = lamp.GetComponent<ParticleSystem>();
-                var main = ps.main;
+                var hoard = lamp.GetComponent<HoardManager>();
 
-                GlobalFireflyController.instance.Modify(light, ps, main.maxParticles);
+                GlobalFireflyController.instance.Modify(hoard, hoard.count);
             }
             hasUpdated = true;
         }
