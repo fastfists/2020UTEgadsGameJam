@@ -28,7 +28,7 @@ public class GlobalFireflyController : MonoBehaviour {
 
 
     public void SetLight(List<Light2D> lights, int count) {
-        int maxFireflies = FireflyManager.instance.maxFireflies;
+        int maxFireflies = GlobalFireflyCounter.instance.maxFireflies;
 
         float intensity = Map((float)count,
                 0.0f, maxFireflies,

@@ -38,15 +38,15 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E) ) {
                 // Get the flies
-                FireflyManager.instance.AddFireflies(hoard.count);
+                GlobalFireflyCounter.instance.AddFireflies(hoard.count);
                 Debug.Log($"Gained {hoard.count} Firefly");
                 // edit the lights of the Lamp
                 GlobalFireflyController.instance.Modify(hoard, 0);
 
             }else if (Input.GetKeyDown(KeyCode.Q)) {
                 // Drop off flies
-                int removeCount = FireflyManager.instance.Count / 2;
-                FireflyManager.instance.RemoveFireflies(removeCount);
+                int removeCount = GlobalFireflyCounter.instance.Count / 2;
+                GlobalFireflyCounter.instance.RemoveFireflies(removeCount);
                 
                 Debug.Log($"Deposited {removeCount} Firefly ");
 

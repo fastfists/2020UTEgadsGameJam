@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireflyManager : MonoBehaviour
+public class GlobalFireflyCounter : MonoBehaviour
 {
-    public static FireflyManager instance;
+    public static GlobalFireflyCounter instance;
 
     public int initialFirefliesCount = 5;
     public int maxFireflies = 30;

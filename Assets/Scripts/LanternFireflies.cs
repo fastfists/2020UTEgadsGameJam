@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class FirefliesController : MonoBehaviour {
+public class LanternFireflies : MonoBehaviour {
     // Start is called before the first frame update
 
     private Light2D flyLight;
@@ -19,7 +19,7 @@ public class FirefliesController : MonoBehaviour {
     }
 
     private void UpdateFlies() {
-        int count = FireflyManager.instance.Count;
+        int count = GlobalFireflyCounter.instance.Count;
         GlobalFireflyController.instance.Modify(hoard, count);
     }
 }
