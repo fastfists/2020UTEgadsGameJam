@@ -49,7 +49,7 @@ public class Artifact : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collider2D)
     {
-        if (GetComponent<Collider>().tag == "Player")
+        if (GetComponent<Collider>().CompareTag("Player"))
         {
             //Debug.Log(GetComponent<Collider>().tag);
             pressE.SetActive(false);

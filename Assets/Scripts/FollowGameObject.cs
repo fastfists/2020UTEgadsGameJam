@@ -21,7 +21,7 @@ public class FollowGameObject : MonoBehaviour
         transform.position = (Vector2)target.position + offset;
     }
 
-    void Switch(GameObject newTarget) {
+    void Switch(Transform newTarget) {
         target = newTarget;
     }
 }
