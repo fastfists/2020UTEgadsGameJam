@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
     private Inventory inven;
+    public Animator animator;
     
     void Start()
     {
@@ -68,6 +69,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
+        animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
+
         moveVelocity = moveInput.normalized * speed;
         if (Input.GetKey(KeyCode.I))
         {
